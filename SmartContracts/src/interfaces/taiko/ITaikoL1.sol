@@ -83,16 +83,16 @@ interface ITaikoL1 {
         bytes calldata _params,
         bytes calldata _txList
     )
-        payable
         external
+        payable
         returns (BlockMetadataV2 memory meta_);
 
      function proposeBlocksV2(
         bytes[] calldata _paramsArr,
         bytes[] calldata _txListArr
     )
-        payable
         external
+        payable
         returns (BlockMetadataV2[] memory metaArr_);
 
     function getStateVariables() external view returns (SlotA memory, SlotB memory);
